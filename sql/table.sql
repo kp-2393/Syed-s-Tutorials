@@ -1,0 +1,28 @@
+CREATE TABLE "students" (
+	"id"	INTEGER NOT NULL,
+	"firstName"	TEXT NOT NULL,
+	"lastName"	TEXT NOT NULL,
+	"email"	TEXT NOT NULL UNIQUE,
+	"classType"	TEXT NOT NULL,
+	"course"	TEXT NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+
+CREATE TABLE "Teacher" (
+	"id"	INTEGER NOT NULL,
+	"FirstName"	TEXT NOT NULL,
+	"lastName"	INTEGER NOT NULL,
+	"email"	TEXT NOT NULL UNIQUE,
+	"languages known"	TEXT NOT NULL,
+	PRIMARY KEY("1" AUTOINCREMENT)
+);
+
+CREATE TABLE "frontEnd" (
+	"id"	INTEGER NOT NULL,
+	"firstName"	TEXT NOT NULL,
+	"lastName"	TEXT NOT NULL,
+	"email"	TEXT NOT NULL UNIQUE,
+	"classType"	TEXT NOT NULL,
+	"course"	TEXT NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
